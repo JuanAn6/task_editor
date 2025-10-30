@@ -1,0 +1,78 @@
+/* tiptap.css */
+
+/* Contenedor general */
+.tiptap-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: #fafafa;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+/* Barra de herramientas */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.toolbar button {
+  border: 1px solid #bbb;
+  background: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.toolbar button:hover {
+  background: #eee;
+}
+
+.toolbar button.active {
+  background: #d9d9d9;
+  border-color: #888;
+}
+
+/* Área del editor */
+.editor {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  min-height: 200px;
+  padding: 12px;
+  background: white;
+  line-height: 1.6;
+}
+
+/* Estilos de texto dentro del editor */
+.editor h1 {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.editor blockquote {
+  border-left: 4px solid #999;
+  padding-left: 12px;
+  color: #555;
+  font-style: italic;
+  margin: 8px 0;
+}
+
+.editor ul {
+  margin-left: 20px;
+  list-style: disc;
+}
+
+.editor p {
+  margin: 8px 0;
+}
+
+.ProseMirror {
+  outline: none;
+}
