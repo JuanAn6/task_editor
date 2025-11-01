@@ -50,10 +50,15 @@ const MenuBar = ({ editor }) => {
   );
 };
 
-export default function TiptapEditor() {
+export default function TiptapEditor({text, setText}) {
   const editor = useEditor({
     extensions: [StarterKit],
-    content: "<p>Hola 👋 Escribe algo aquí...</p>",
+    content: text,
+    onUpdate: ({ editor }) => {
+      //Update the text variable
+      const newContent = editor.getHTML();
+      setText(newContent); 
+    },
   });
 
   return (
